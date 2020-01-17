@@ -1,0 +1,38 @@
+
+
+<div class="container">
+
+
+   <div class="row">
+      <div class="col-md-6 col-6">  <strong>
+            Post Detail:
+         </strong>   
+         {{datos.id}}
+      </div>
+      <div class="col-md-6 col-6 text-right">
+           {{newFecha}}
+
+      </div>
+   </div>
+
+     <br>
+
+  
+   <p>
+
+
+       <strong>
+            Title:
+       </strong>
+    {{datos.title}}
+  
+   </p>
+
+    <p>
+       <strong>Body:</strong> {{datos.body}}
+    </p>
+
+    <div class="comentarios">
+       <app-comentarios [Id]="datos.id" (fecha)="mostrarFecha($event)"></app-comentarios>
+    </div>
+</div>

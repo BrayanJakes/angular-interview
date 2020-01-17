@@ -1,0 +1,25 @@
+<div class="container mt-3">
+
+    <table class="table" >
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Post</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr *ngFor="let dato of datos">
+                <td> {{dato.id}} </td>
+                <td> {{dato.title}} </td>
+                <td> <button mat-button color="primary" (click)="abrirModal(dato)" >Ver</button> </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</div>

@@ -1,0 +1,12 @@
+<h4>Comentarios:</h4>
+
+<ul>
+    <li *ngFor="let comentario of comentarios">
+        <p><strong>name:</strong> {{comentario.name}} </p>
+        <p><strong>comentario:</strong> {{comentario.body}} </p>
+    </li>
+</ul>
+
+<div class="text-center">
+    <button mat-raised-button color="primary" (click)="mostrarFechaHoy()">Emitir Fecha</button>
+</div>
